@@ -48,17 +48,17 @@ y_p5 = 4.25 + 2.25*np.sin(5*pe/4 + (5*pe/4)*t)
 # x_p2 = 9 + 0*t
 # y_p2 = 8 + 2*t
 
-# x_p3 = 9 + 2.25*np.cos(pe/2 + (pe)*t)
+# x_p3 = 9 + 3.25*np.cos(pe/2 + (pe)*t)
 # y_p3 = 5.75 + 2.25*np.sin(pe/2 + (pe)*t)
 
-# x_p4 = 9 + 2.25*np.cos(3*pe/2 + (pe)*t)
-# y_p4 = 1.25 + 2.25*np.sin(3*pe/2 + (pe)*t)
+# x_p4 = 9 + 2.75*np.cos((3*pe/2 - 0.3) + (pe + 0.3)*t)
+# y_p4 = 1.25 + 2.25*np.sin((3*pe/2 - 0.3) + (pe + 0.3)*t)
 
-# x_p5 = 9 + 0.5*np.cos(pe/4 + (5*pe/4)*t)
-# y_p5 = -0.5 + 0.5*np.sin(pe/4 + (5*pe/4)*t)
+# x_p5 = 8 + 0.5*np.cos(pe/4 + (5*pe/4)*t)
+# y_p5 = -0.36 + 0.5*np.sin(pe/4 + (5*pe/4)*t)
 
-# x_p6 = 9 + 0.5*np.cos(pe/4) + 2*t
-# y_p6 = -0.5 + 0.5*np.sin(pe/4) - 2*t
+# x_p6 = 8 + 0.5*np.cos(pe/4) + 2*t
+# y_p6 = -0.36 + 0.5*np.sin(pe/4) - 2*t
 
 #ई
 # x_p1 = 7.5 + 3*t
@@ -67,17 +67,17 @@ y_p5 = 4.25 + 2.25*np.sin(5*pe/4 + (5*pe/4)*t)
 # x_p2 = 9 + 0*t
 # y_p2 = 8 + 2*t
 
-# x_p3 = 9 + 2.25*np.cos(pe/2 + (pe)*t)
+# x_p3 = 9 + 3.25*np.cos(pe/2 + (pe)*t)
 # y_p3 = 5.75 + 2.25*np.sin(pe/2 + (pe)*t)
 
-# x_p4 = 9 + 2.25*np.cos(3*pe/2 + (pe)*t)
-# y_p4 = 1.25 + 2.25*np.sin(3*pe/2 + (pe)*t)
+# x_p4 = 9 + 2.75*np.cos((3*pe/2 - 0.3) + (pe + 0.3)*t)
+# y_p4 = 1.25 + 2.25*np.sin((3*pe/2 - 0.3) + (pe + 0.3)*t)
 
-# x_p5 = 9 + 0.5*np.cos(pe/4 + (5*pe/4)*t)
-# y_p5 = -0.5 + 0.5*np.sin(pe/4 + (5*pe/4)*t)
+# x_p5 = 8 + 0.5*np.cos(pe/4 + (5*pe/4)*t)
+# y_p5 = -0.36 + 0.5*np.sin(pe/4 + (5*pe/4)*t)
 
-# x_p6 = 9 + 0.5*np.cos(pe/4) + 2*t
-# y_p6 = -0.5 + 0.5*np.sin(pe/4) - 2*t
+# x_p6 = 8 + 0.5*np.cos(pe/4) + 2*t
+# y_p6 = -0.36 + 0.5*np.sin(pe/4) - 2*t
 
 # x_p7 = 9 + 1.5*np.cos(pe/4 + (5*pe/4)*t)
 # y_p7 = 11.5 + 1.5*np.sin(pe/4 + (5*pe/4)*t)
@@ -261,8 +261,8 @@ out.plot(x_p2, y_p2, 'k', linewidth=5.0)
 out.plot(x_p3, y_p3, 'k', linewidth=5.0)
 out.plot(x_p4, y_p4, 'k', linewidth=5.0)
 out.plot(x_p5, y_p5, 'k', linewidth=5.0)
-# out.plot(x_p6,y_p6,'k')
-# out.plot(x_p7,y_p7,'k')
-# out.plot(x_p8,y_p8,'k')
+# out.plot(x_p6, y_p6,'k', linewidth=5.0)
+# out.plot(x_p7, y_p7,'k', linewidth=5.0)
+# out.plot(x_p8, y_p8,'k', linewidth=5.0)
 out.axis('off')
 plt.show()
