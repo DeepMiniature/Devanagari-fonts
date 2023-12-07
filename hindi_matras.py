@@ -125,8 +125,8 @@ t = np.arange(0,1,0.001)
 # y_p2 = 12 + 0.5*np.sin(0 + (2*pe)*t)
 
 # name = 'final_font/m-Halant'
-x_p1 = 7 + 3*t
-y_p1 = 14 - 3*t
+# x_p1 = 7 + 3*t
+# y_p1 = 14 - 3*t
 
 graph = plt.figure()
 out = graph.add_subplot(1,1,1)

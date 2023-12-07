@@ -6,12 +6,12 @@ le = np.e
 pe = math.pi
 t = np.arange(0,1,0.001)
 
-# name =  '0'
+# name = 'final_font/0'
 # x_p1 = 3 + 1*np.cos(0 + (2*pe)*t)
 # y_p1 = 3 + 1*np.sin(0 + (2*pe)*t)
 
 
-# name =  '1'
+# name = 'final_font/1'
 # x_p1 = 5 + 0.5*np.cos(0 + 2*pe*t)
 # y_p1 = 10 + 0.5*np.sin(0 + 2*pe*t)
 
@@ -21,7 +21,7 @@ t = np.arange(0,1,0.001)
 # x_p3 = 4.35 + 0.5*np.cos(pe/4) + 1.3*t
 # y_p3 = 8 + 0.5*np.sin(pe/4) - 1.7*t
 
-# name =  '2'
+# name = 'final_font/2'
 # x_p1 = 6 + 1*np.cos((3*pe/2) + (5*pe/4-0.55)*t)
 # y_p1 = 7.95 + 1.2*np.sin((3*pe/2) + (5*pe/4-0.55)*t)
 
@@ -32,7 +32,7 @@ t = np.arange(0,1,0.001)
 # y_p3 = 6.85 + 0.5*np.sin(pe/4+0.1) - 1.7*t
 
 
-# name =  '3'
+# name = 'final_font/3'
 # x_p1 = 6 + 1.75*np.cos(3*pe/2 + (5*pe/4)*t)
 # y_p1 = 8.25 + 1.75*np.sin(3*pe/2 + (5*pe/4)*t)
 
@@ -46,7 +46,7 @@ t = np.arange(0,1,0.001)
 # y_p4 = 0.65 + 2.5*t
 
 
-# name =  '4'
+# name = 'final_font/4'
 # x_p1 = 6 + 1.5*np.cos(0 + (-pe)*t)
 # y_p1 = 6 + 2.25*np.sin(0 + (-pe)*t)
 
@@ -54,7 +54,7 @@ t = np.arange(0,1,0.001)
 # y_p2 = 3.15 + 0.6*np.sin(0 + (2*pe)*t)
 
 
-# name =  '5'
+# name = 'final_font/5'
 # x_p1 = 6 + 1.5*np.cos(pe-0.7 + (pe+0.)*t)
 # y_p1 = 6 + 2.25*np.sin(pe-0.7 + (pe+0.)*t)
 
@@ -65,7 +65,7 @@ t = np.arange(0,1,0.001)
 # y_p3 = 4.1 + 0.5*np.sin(pe/4+0.1) - 2.*t
 
 
-# name =  '6'
+# name = 'final_font/6'
 # x_p1 = 6 + 1.75*np.cos(pe/2 + (4*pe/4)*t)
 # y_p1 = 8.25 + 1.75*np.sin(pe/2 + (4*pe/4)*t)
 
@@ -79,7 +79,7 @@ t = np.arange(0,1,0.001)
 # y_p4 = 0.4 + 2.5*t
 
 
-# name =  '7'
+# name = 'final_font/7'
 # x_p1 = 6 + 1.5*np.cos(pe-0.7 + (pe+0.6)*t)
 # y_p1 = 6 + 2.5*np.sin(pe-0.7 + (pe+0.6)*t)
 
@@ -87,7 +87,7 @@ t = np.arange(0,1,0.001)
 # y_p2 = 5.75 + 0.6*np.sin(0 + (2*pe-1)*t)
 
 
-# name =  '8'
+# name = 'final_font/8'
 # x_p1 = 6 + 1*np.cos(pe-0.2 + (pe+0.2)*t)
 # y_p1 = 3 + 0.95*np.sin(pe-0.2 + (pe+0.2)*t)
 
@@ -95,7 +95,7 @@ t = np.arange(0,1,0.001)
 # y_p2 = 4.3 + 0.5*np.sin(pe/4+0.1) - 1.5*t
 
 
-# name =  '9'
+# name = 'final_font/9'
 # x_p1 = 5 + 0.4*np.cos(-2 +(2*pe-.5)*t)
 # y_p1 = 4 + 0.4*np.sin(-2 + (2*pe-.5)*t)
 
