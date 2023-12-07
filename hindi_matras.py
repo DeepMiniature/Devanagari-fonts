@@ -14,6 +14,9 @@ t = np.arange(0,1,0.001)
 # x_p2 = 9 + 0*t
 # y_p2 = 2 + 8*t
 
+# name = 'final_font/m-viram'
+# x_p1 = 9 + 0*t
+# y_p1 = 2 + 8*t
 
 # name = 'final_font/m-अः'
 # x_p1 = 11 + 0.5*np.cos(0 + (2*pe)*t)

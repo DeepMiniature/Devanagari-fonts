@@ -14,7 +14,9 @@ def rotate_points(u, v, angle_degrees):
     return rotated_points[0], rotated_points[1]
 
 # Insert the letter here
-
+name = 'final_font/m-viram'
+x_p1 = 9 + 0*t
+y_p1 = 2 + 8*t
 
 c = 2
 try:
