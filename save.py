@@ -4,31 +4,21 @@ from matplotlib import pyplot as plt
 
 le = np.e
 pe = math.pi
-
 t = np.arange(0,1,0.001)
 
-#Enter letter equation here
-#अ
-name = "enter name here"
+def rotate_points(u, v, angle_degrees):
+    angle_rad = np.radians(angle_degrees)
+    rotation_matrix = np.array([[np.cos(angle_rad), -np.sin(angle_rad)],
+                                [np.sin(angle_rad), np.cos(angle_rad)]])
+    rotated_points = np.dot(rotation_matrix, np.vstack((u, v)))
+    return rotated_points[0], rotated_points[1]
 
-x_p1 = 7.5 + 3*t
-y_p1 = 10 + 0*t
+# Insert the letter here
 
-x_p2 = 9 + 0*t
-y_p2 = 2 + 8*t
 
-x_p3 = 6 + 3*t
-y_p3 = 6.5 + 0*t
 
-x_p4 = 6 + 1.75*np.cos(3*pe/2 + (5*pe/4)*t)
-y_p4 = 8.25 + 1.75*np.sin(3*pe/2 + (5*pe/4)*t)
 
-x_p5 = 6 + 2.25*np.cos(5*pe/4 + (5*pe/4)*t)
-y_p5 = 4.25 + 2.25*np.sin(5*pe/4 + (5*pe/4)*t)
-
-# 5. For the transformation f(z) = z^c, add  the following transforms for each line
 c = 2
-
 try:
     u_1 = ((x_p1**2 + y_p1**2)**(0.5*c))*np.cos(c*np.arctan(y_p1/x_p1))
     v_1 = ((x_p1**2 + y_p1**2)**(0.5*c))*np.sin(c*np.arctan(y_p1/x_p1)) 
@@ -63,23 +53,43 @@ try:
 except:
     pass
 
+try:
+    deg = 30
+    ru_1, rv_1 = rotate_points(u_1, v_1, deg)
+    ru_2, rv_2 = rotate_points(u_2, v_2, deg)
+    ru_3, rv_3 = rotate_points(u_3, v_3, deg)
+    ru_4, rv_4 = rotate_points(u_4, v_4, deg)
+    ru_5, rv_5 = rotate_points(u_5, v_5, deg)
+    ru_6, rv_6 = rotate_points(u_6, v_6, deg)
+    ru_7, rv_7 = rotate_points(u_7, v_7, deg)
+    ru_8, rv_8 = rotate_points(u_8, v_8, deg)
+    ru_9, rv_9 = rotate_points(u_9, v_9, deg)
+    ru_10, rv_10 = rotate_points(u_10, v_10, deg)
+
+    # out.plot(ru_1, rv_1, 'r', linewidth=3.0) 
+    # out.plot(ru_2, rv_2, 'b', linewidth=3.0)  
+
+except Exception as e:
+    pass
+
 # just add new out.plot statements as and when required
 graph = plt.figure()
 out = graph.add_subplot(1,1,1)
 out.set_aspect('equal')
 try:
-    out.plot(u_1, v_1, 'k', linewidth=5.0)
-    out.plot(u_2, v_2, 'k', linewidth=5.0)
-    out.plot(u_3, v_3, 'k', linewidth=5.0)
-    out.plot(u_4, v_4, 'k', linewidth=5.0)
-    out.plot(u_5, v_5, 'k', linewidth=5.0)
-    out.plot(u_6, v_6, 'k', linewidth=5.0)
-    out.plot(u_7, v_7, 'k', linewidth=5.0)
-    out.plot(u_8, v_8, 'k', linewidth=5.0)
-    out.plot(u_9, v_9, 'k', linewidth=5.0)
-    out.plot(u_10, v_10, 'k', linewidth=5.0)
+    out.plot(ru_1, rv_1, 'k', linewidth=5.0)
+    out.plot(ru_2, rv_2, 'k', linewidth=5.0)
+    out.plot(ru_3, rv_3, 'k', linewidth=5.0)
+    out.plot(ru_4, rv_4, 'k', linewidth=5.0)
+    out.plot(ru_5, rv_5, 'k', linewidth=5.0)
+    out.plot(ru_6, rv_6, 'k', linewidth=5.0)
+    out.plot(ru_7, rv_7, 'k', linewidth=5.0)
+    out.plot(ru_8, rv_8, 'k', linewidth=5.0)
+    out.plot(ru_9, rv_9, 'k', linewidth=5.0)
+    out.plot(ru_10, rv_10, 'k', linewidth=5.0)
+    
 except:
     pass
 out.axis('off')
 plt.savefig(name)
-plt.show()
+# plt.show()
